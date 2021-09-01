@@ -6,7 +6,9 @@
 class GameObject
 {
 public:
-	GameObject(Shader& shader, Texture& texture, glm::vec3 position);
+	GameObject(Shader& shader, Texture& texture, glm::vec3 position = { 0.f, 0.f, 0.f });
+	~GameObject();
+
 	void draw(Renderer& renderer) const;
 
 	void setPosition(glm::vec3 position);
@@ -23,6 +25,6 @@ private:
 	glm::vec3   m_position{ 0.f, 0.f, 0.f }, m_size{ 1.f, 1.f, 1.f }, m_velocity{ 0.f, 0.f, 0.f };
 	float		m_rotation{ 0.f };
 
-	unsigned int m_VAO;
+	unsigned int m_VAO, m_VBO, m_EBO, m_numOfIndices;
 };
 
