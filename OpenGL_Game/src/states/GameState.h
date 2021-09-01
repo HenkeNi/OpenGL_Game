@@ -2,7 +2,6 @@
 #include "../GameObject.h"
 #include "State.h"
 
-//#include <vector>
 
 class GameState : public State
 {

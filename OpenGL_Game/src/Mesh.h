@@ -5,7 +5,6 @@
 #include "Renderer.h"
 #include "Vertex.h"
 
-//#include <vector>
 
 class Mesh
 {

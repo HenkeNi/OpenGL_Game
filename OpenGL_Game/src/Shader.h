@@ -3,8 +3,6 @@
 //#include <glm/glm.hpp>
 //#include <glm/gtc/type_ptr.hpp>
 
-//#include <optional>
-//#include <string>
 
 /*
 *	Class for creating a Shader program	

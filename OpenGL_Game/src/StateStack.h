@@ -2,9 +2,6 @@
 #include "states/State.h"
 #include "Renderer.h"
 
-//#include <memory>
-//#include <stack>
-
 class StateStack
 {
 public:

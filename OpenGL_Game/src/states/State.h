@@ -2,8 +2,6 @@
 #include "../SharedContext.h"
 #include "../Renderer.h"
 
-//#include <memory>
-
 class StateStack;
 
 class State
