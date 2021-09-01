@@ -8,7 +8,7 @@
 //}
 
 
-void Renderer::draw(Shader& shader, Texture& texture, int numOfIndices, unsigned int VAO, const glm::vec3& position)//draw(glm::vec2 position, glm::vec2 size, float rotation, glm::vec3 color)
+void Renderer::draw(Shader& shader, const Texture& texture, glm::vec2 position, glm::vec2 size = glm::vec2(10.0f, 10.0f), float rotate = 0.0f);
 {
 	shader.use();
 	texture.bind(0);
@@ -46,4 +46,12 @@ void Renderer::clearScreen()
 {
 	glClearColor(0.3f, 0.6f, 0.4f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
+}
+
+
+
+
+void Renderer::initRenderData()
+{
+
 }
