@@ -16,11 +16,7 @@ public:
 private:
 	void initGameObjects();
 	
-
 private:
 	std::vector<GameObject> m_gameObjects; // Use unordered_map instead??
-
-
-	unsigned int m_VAO;
 };
 
