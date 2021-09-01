@@ -15,6 +15,7 @@ Game::Game()
 	: m_window{}, m_renderer{ new Renderer }
 {
 	initGLEW();
+	loadResources(); // Load resources before initStates()??
 	initStates();
 
 	glfwSetKeyCallback(m_window.getWindow(), key_callback);
@@ -22,7 +23,6 @@ Game::Game()
 
 	configureOpenGL();
 
-	loadResources(); // Load resources before initStates()??
 }
 
 

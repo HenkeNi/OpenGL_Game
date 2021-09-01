@@ -26,7 +26,6 @@ private:
 private:
 	Window								  m_window;
 	StateStack							  m_stateStack;
-
 	ResourceManager<Shader, std::string>  m_shaderManager;
 	ResourceManager<Texture, std::string> m_textureManager;
 
