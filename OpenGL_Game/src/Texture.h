@@ -1,7 +1,6 @@
 #pragma once
 
 #include <GL/glew.h>
-//#include <string>
 
 class Texture
 {
@@ -14,7 +13,7 @@ public:
 
 	inline unsigned int& getId() { return m_id; }
 
-	static unsigned int getNextTextureUnit();
+	//static unsigned int getNextTextureUnit();
 
 private:
 	unsigned int m_id;
