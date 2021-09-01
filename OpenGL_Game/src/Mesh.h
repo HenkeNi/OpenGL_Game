@@ -19,11 +19,10 @@ private:
 	void setupMesh();
 
 private:
-	unsigned int		 m_VAO, m_VBO, m_EBO;
-	std::vector<Vertex>  m_vertices;
+	std::vector<Texture>  m_textures;
+	std::vector<Vertex>   m_vertices;
 	std::vector<unsigned> m_indices;
-
-	std::vector<Texture> m_textures;
+	unsigned int		  m_VAO, m_VBO, m_EBO;
 
 
 };
