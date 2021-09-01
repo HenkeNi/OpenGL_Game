@@ -12,6 +12,11 @@
 //#include <sstream>
 
 
+Shader::~Shader()
+{
+	glDeleteProgram(m_id);
+}
+
 
 bool Shader::loadFromFile(const std::string& vertexPath, const std::string& fragmentPath, const std::string& geometryPath)
 {
