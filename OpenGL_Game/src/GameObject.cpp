@@ -12,7 +12,7 @@ GameObject::GameObject(Shader& shader, Texture& texture, glm::vec3 position)
 
 void GameObject::draw(Renderer& renderer) const
 {
-	renderer.draw(m_shader, m_texture, m_position, m_size, m_rotation)
+	renderer.draw(m_shader, m_texture, m_position, m_size, m_rotation);
 }
 
 
@@ -40,7 +40,7 @@ void GameObject::setRotation(float rotation)
 
 void GameObject::initData()
 {
-	float vertices[] = {
+		float vertices[] = {
 		// positions          // texture coords
 		 0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
 		 0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
