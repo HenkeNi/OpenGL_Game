@@ -1,9 +1,6 @@
 #include "pch.h"
 #include "ResourceManager.h"
 
-//#include <cassert>
-//#include <stdexcept>
-
 
 template <typename Resource, typename Identifier>
 template <typename... Args>
