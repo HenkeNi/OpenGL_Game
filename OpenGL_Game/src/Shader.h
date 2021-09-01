@@ -1,7 +1,7 @@
 #pragma once
 #include <GL/glew.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/type_ptr.hpp>
+//#include <glm/glm.hpp>
+//#include <glm/gtc/type_ptr.hpp>
 
 //#include <optional>
 //#include <string>
@@ -12,6 +12,8 @@
 class Shader
 {
 public:
+	~Shader();
+
 	bool loadFromFile(const std::string& vertexPath, const std::string& fragmentPath, const std::string& geometryPath = "");
 	void attachShaders(unsigned int vertex, unsigned int fragment, std::optional<unsigned int> geometry);
 	void checkCompileErrors(unsigned int object, const std::string& type) const;
