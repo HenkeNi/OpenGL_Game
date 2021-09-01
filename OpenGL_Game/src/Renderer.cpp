@@ -8,7 +8,7 @@
 //}
 
 
-void Renderer::draw(Shader& shader, const Texture& texture, glm::vec2 position, glm::vec2 size = glm::vec2(10.0f, 10.0f), float rotate = 0.0f);
+void Renderer::draw(Shader& shader, const Texture& texture, glm::vec3 position, glm::vec3 size, float rotate)
 {
 	shader.use();
 	texture.bind(0);
@@ -22,12 +22,12 @@ void Renderer::draw(Shader& shader, const Texture& texture, glm::vec2 position, 
 	shader.setMatrix4("projection", projection);
 	shader.setMatrix4("view", view);
 
-	glBindVertexArray(VAO);
+	glBindVertexArray(m_VAO);
 	glm::mat4 model = glm::mat4(1.f);
 	model = glm::translate(model, position);
 	
 	shader.setMatrix4("model", model);
-	glDrawElements(GL_TRIANGLES, numOfIndices, GL_UNSIGNED_INT, 0);
+	glDrawElements(GL_TRIANGLES, m_numOfIndices, GL_UNSIGNED_INT, 0);
 
 	//glm::mat4 model 
 
